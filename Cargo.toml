@@ -1,5 +1,5 @@
 [workspace]
-
 members = [
-    "trpl/hello_cargo"
+  'trpl/guessing_game',
+  'trpl/hello_cargo'
 ]
