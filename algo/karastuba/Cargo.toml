@@ -1,0 +1,9 @@
+[package]
+name = "karastuba"
+version = "0.1.0"
+authors = ["xypnox <xypnox@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+num-bigint = "0.2"
+num-traits = "0.2"
