@@ -3,5 +3,5 @@ members = [
   'trpl/guessing_game',
   'trpl/hello_cargo',
   'trpl/tests',
-  'algo/karastuba'
+  'algo'
 ]
