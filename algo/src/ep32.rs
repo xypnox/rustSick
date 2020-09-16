@@ -15,38 +15,28 @@
 #[path = "./perm.rs"]
 mod perm;
 
+use std::iter::FromIterator;
+use std::iter::Iterator;
+
 pub fn run() {
-    let init_nums = "123456789  ";
-    let chars: Vec<String> = init_nums.chars().map(|c| c.to_string()).collect();
+    let mut sols: Vec<u32> = vec![];
 
-    println!("{:?}", chars);
-    // for i in 1..10 {
-    //     let mut nums = perm::perms_r(init_nums.clone(), i);
-
-    //     // let perms = perm::all_perms(init_nums.clone());
-
-    //     println!("{:?}", nums);
-    //     println!("{:?}", nums);
-    // }
-
-    let mut sols = vec![];
-    for eq in perm::str_perm(chars).iter() {
-        let nums: Vec<u32> = eq
-            .split_whitespace()
-            .map(|x| x.to_string().parse::<u32>().unwrap())
-            .collect();
-
-        if nums.len() == 3 {
-            if nums[0] * nums[1] == nums[2] {
-                sols.push(nums[2]);
-            } else if nums[1] * nums[2] == nums[0] {
-                sols.push(nums[0]);
-            } else if nums[0] * nums[2] == nums[1] {
-                sols.push(nums[1]);
+    for i in 1..10000 {
+        for j in 1..10000 {
+            if is_pandigital(i, j, i * j) {
+                sols.push(i * j);
             }
         }
     }
+
     sols.sort();
     sols.dedup();
     println!("{:?}", sols);
+    println!("{}", sols.iter().sum::<u32>());
+}
+
+fn is_pandigital(n1: u32, n2: u32, n3: u32) -> bool {
+    let mut chars: Vec<char> = (&format!("{}{}{}", n1, n2, n3)[..]).chars().collect();
+    chars.sort();
+    String::from_iter(chars) == "123456789"
 }
