@@ -6,9 +6,9 @@ fn main() {
 
     println!("{:?}", res);
 
-    let mut array: Vec<i32> = vec![3, 1, 5, 6, 2, 4, 9, 1];
+    let array: Vec<i32> = vec![3, 1, 5, 6, 2, 4, 9, 1];
 
-    let array = selection_sort::selection_sort(&mut array);
+    let array = selection_sort::selection_sort(array);
 
     println!("{:?}", array);
 }
