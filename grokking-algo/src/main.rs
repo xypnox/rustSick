@@ -1,4 +1,5 @@
 mod binary_search;
+mod quicksort;
 mod selection_sort;
 
 fn main() {
@@ -9,6 +10,12 @@ fn main() {
     let array: Vec<i32> = vec![3, 1, 5, 6, 2, 4, 9, 1];
 
     let array = selection_sort::selection_sort(array);
+
+    println!("{:?}", array);
+
+    let array: Vec<i32> = vec![3, 1, 5, 6, 2, 4, 9, 1];
+
+    let array = quicksort::quicksort(array);
 
     println!("{:?}", array);
 }
