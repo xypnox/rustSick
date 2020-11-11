@@ -5,5 +5,6 @@ members = [
   'trpl/tests',
   'algo',
   'grokking-algo',
-  'experiments/pxsort_v1'
+  'experiments/pxsort_v1',
+  'scrap/v1'
 ]
