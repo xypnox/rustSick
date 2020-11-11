@@ -4,5 +4,6 @@ members = [
   'trpl/hello_cargo',
   'trpl/tests',
   'algo',
-  'grokking-algo'
+  'grokking-algo',
+  'experiments/pxsort_v1'
 ]
