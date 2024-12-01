@@ -15,18 +15,18 @@ fn parse(input: &str) -> (Vec<i32>, Vec<i32>) {
     second_list.sort();
 
     // println!("Lengths {}, {}", first_list.len(), second_list.len());
-    println!("First 10");
-    for i in 0..10 {
-        println!("{} {}", first_list[i], second_list[i])
-    }
-    println!("Last 10");
-    for i in 0..10 {
-        println!(
-            "{} {}",
-            first_list[first_list.len() - 1 - i],
-            second_list[second_list.len() - 1 - i]
-        )
-    }
+    // println!("First 10");
+    // for i in 0..10 {
+    //     println!("{} {}", first_list[i], second_list[i])
+    // }
+    // println!("Last 10");
+    // for i in 0..10 {
+    //     println!(
+    //         "{} {}",
+    //         first_list[first_list.len() - 1 - i],
+    //         second_list[second_list.len() - 1 - i]
+    //     )
+    // }
 
     return (first_list, second_list);
 }
