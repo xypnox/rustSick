@@ -9,3 +9,4 @@ members = [
   'experiments/pxsort_v1',
   'scrap/v1'
   ]
+resolver = "2"
