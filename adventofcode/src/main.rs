@@ -1,9 +1,9 @@
 #![allow(dead_code)]
 
-mod y2024;
 mod futils;
+mod y2024;
 
-fn add(a: i32, b: i32)-> i32 {
+fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 
@@ -12,6 +12,5 @@ fn main() {
     println!("b = {}", b);
     println!("Hello, world!");
 
-    y2024::p1::solution();
-
+    y2024::p2::solution();
 }
