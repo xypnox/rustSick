@@ -12,5 +12,5 @@ fn main() {
     println!("b = {}", b);
     println!("Hello, world!");
 
-    y2024::p2::solution();
+    y2024::p3::solution();
 }
